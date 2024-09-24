@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import bgimagechanger from "../../utils/bgimagechanger";
+import BlurIn from "../../components/magicui/blur-in";
+import Button from "../../components/Shared/magicui/ShimmerButton";
+// import BlurIn from "../../../@/components/magicui/blur-in";
 
 // Define images for each button
 const bgimages = {
@@ -39,24 +42,28 @@ const Hero = () => {
   }, []); // Empty dependency array to run on component mount
   
   return (
-    <div
-      // id="home-bg"
-      className="w-full h-full flex flex-col gap-10 justify-center items-center text-white"
-    >
-      <p className="font-semibold text-4xl md:font-bold md:text-8xl">Tembea Kenya</p>
-      <p className="text-xl font-thin text-center md:text-3xl halant">
-        Discover the heart of Africa – Where adventure meets serenity
-      </p>
-      <p className="font-thin text-xl text-center halant">
-        Get started with a destination of choice
-      </p>
+    <div className="w-full h-full flex flex-col gap-10 justify-center items-center text-white">
+      <BlurIn
+        word="Tembea Kenya"
+        className="text-4xl font-bold text-white dark:text-white"
+        duration={1}
+      />
+      <BlurIn
+        word="Discover the heart of Africa – Where adventure meets serenity"
+        className="text-xl font-thin text-center md:text-3xl halant"
+        duration={1.5}
+      />
+      <BlurIn
+        word="Get started with a destination of choice"
+        className="font-thin text-sm text-center md:text-xl halant"
+        duration={2}
+      />
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 px-24 h-1/8 w-1/4 md:w-[40%]">
         <HomeButton
           text="NAIROBI"
           bgLink={bgimages.nbi}
         />
         <HomeButton
-        
           text="MOMBASA"
           bgLink={bgimages.msa}
         />

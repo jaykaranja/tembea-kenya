@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className='w-full flex justify-between items-center py-4 px-6 md:px-10 h-[12%] md:h-[15%] bg-black border-b border-b-2'>
         <div className='flex gap-8'>
           {/* <p className='text-white'>TembeaKenya</p> */}
-          <div className='flex items-center text-sm gap-4'>
+          <div className='md:hidden flex items-center text-sm gap-4'>
             <MenuRoundedIcon 
               className='text-white'
               fontSize='inherit'
