@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className='w-full flex justify-between items-center py-4 px-10 h-[15%] bg-black border-b border-b-2'>
         <div className='flex gap-8'>
-          <p className='text-white'>TembeaKenya</p>
+          {/* <p className='text-white'>TembeaKenya</p> */}
           <div className='flex gap-6'>
             <NavButton text='PRIVATE RETREATS'/>
             <NavButton text='HOTELS & RESORTS'/>
@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div>
           <Button 
-            onClick={() => alert("Hey man")}
+            onClick={() => null}
             text={'Apply booking'}
             type={"primary"}
           />
