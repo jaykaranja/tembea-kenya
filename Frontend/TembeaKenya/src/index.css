@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Halant'; /* Name of the font */
-  src: url('./assets/fonts/halant/Halant-Medium.ttf') format('truetype');
+  src: url('https://tembeakenya.blob.core.windows.net/static/fonts/halant/Halant-Medium.ttf') format('truetype');
   font-weight: normal; /* You can specify font-weight and style if necessary */
   font-style: normal;
 }
@@ -21,7 +21,7 @@
 }
 
 #home-bg {
-  background-image: url('../src/assets/msa-intro.jpg');
+  background-image: url('https://tembeakenya.blob.core.windows.net/static/msa-intro.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
