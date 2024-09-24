@@ -10,7 +10,7 @@ const FourSeasonsBooking = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+    return;
     // Create booking object
     const booking = {
       destination,
@@ -37,7 +37,7 @@ const FourSeasonsBooking = () => {
       
       {/* Overlay Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-white h-full bg-opacity-60 bg-black">
-        <h1 className="text-5xl font-bold mb-6 text-center">Discover Four Seasons</h1>
+        <h1 className="text-5xl font-bold mb-6 text-center">Discover Tembea Kenya</h1>
         
         {/* Booking Form */}
         <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
