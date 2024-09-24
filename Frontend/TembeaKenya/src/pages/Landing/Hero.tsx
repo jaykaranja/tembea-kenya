@@ -1,5 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import bgimagechanger from "../../utils/bgimagechanger";
+
+// Define images for each button
+const bgimages = {
+  nbi: 'https://tembeakenya.blob.core.windows.net/static/nbi-intro.jpg',
+  msa: 'https://tembeakenya.blob.core.windows.net/static/msa-intro.jpg',
+  cnt: 'https://tembeakenya.blob.core.windows.net/static/cnt-intro.jpg',
+};
 
 type THomeButton = { 
   /** Text to display on button */
@@ -21,6 +28,16 @@ const HomeButton:React.FC<THomeButton> = ({
 )
 
 const Hero = () => {
+  
+  // Preload images when component mounts
+  useEffect(() => {
+    const imgArray = Object.values(bgimages);
+    imgArray.forEach((img) => {
+      const image = new Image();
+      image.src = img;
+    });
+  }, []); // Empty dependency array to run on component mount
+  
   return (
     <div
       id="home-bg"
@@ -36,15 +53,16 @@ const Hero = () => {
       <div className="flex items-center justify-center gap-4 px-24 h-1/8 w-[40%]">
         <HomeButton
           text="NAIROBI"
-          bgLink={"../src/assets/nbi-intro.jpg"}
+          bgLink={bgimages.nbi}
         />
         <HomeButton
+        
           text="MOMBASA"
-          bgLink={"../src/assets/msa-intro.jpg"}
+          bgLink={bgimages.msa}
         />
         <HomeButton
           text="CENTRAL"
-          bgLink={"../src/assets/cnt-intro.jpg"}
+          bgLink={bgimages.cnt}
         />
       </div>
     </div>
