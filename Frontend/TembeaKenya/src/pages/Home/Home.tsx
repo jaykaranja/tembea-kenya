@@ -3,12 +3,7 @@ import Hero from "../Landing/Hero";
 
 const Home = () => {
   return (
-    <div 
-      className="flex flex-col h-full" 
-      style={{
-        backgroundImage: "url(../../../assets/Sarova-Whitesands-Pool-1.jpg)"
-      }}
-    >
+    <div className="flex flex-col w-full h-full">
       <Hero />
     </div>
   );

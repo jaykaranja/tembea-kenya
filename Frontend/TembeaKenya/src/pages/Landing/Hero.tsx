@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import bgimagechanger from "../../utils/bgimagechanger";
 
 // Define images for each button
@@ -43,8 +43,8 @@ const Hero = () => {
       id="home-bg"
       className="bg-black w-full h-full flex flex-col gap-10 justify-center items-center text-white"
     >
-      <p className="font-bold text-8xl">Tembea Kenya</p>
-      <p className="font-thin text-3xl halant">
+      <p className="font-semibold text-6xl md:font-bold md:text-8xl">Tembea Kenya</p>
+      <p className="text-xl font-thin md:text-3xl halant">
         Discover the heart of Africa – Where adventure meets serenity
       </p>
       <p className="font-thin text-xl halant">
