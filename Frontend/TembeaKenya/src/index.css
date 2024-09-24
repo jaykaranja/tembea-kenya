@@ -24,6 +24,7 @@
   background-image: url('https://tembeakenya.blob.core.windows.net/static/msa-intro.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
   transition: background-image 500ms ease-in-out; /* Smooth transition */
 

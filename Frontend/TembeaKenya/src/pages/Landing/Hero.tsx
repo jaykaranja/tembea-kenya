@@ -20,7 +20,7 @@ const HomeButton:React.FC<THomeButton> = ({
   bgLink
 }) => (
   <button
-    className="font-thin text-lg bg-white py-6 px-14 text-black hover:bg-black/90 hover:text-white transition duration-500"
+    className="font-thin text-lg bg-white py-2 md:py-6 px-10 md:px-14 text-black hover:bg-black/90 hover:text-white transition duration-500"
     onMouseOver={() => bgimagechanger(bgLink)}
   >
     {text}
@@ -40,17 +40,17 @@ const Hero = () => {
   
   return (
     <div
-      id="home-bg"
-      className="bg-black w-full h-full flex flex-col gap-10 justify-center items-center text-white"
+      // id="home-bg"
+      className="w-full h-full flex flex-col gap-10 justify-center items-center text-white"
     >
-      <p className="font-semibold text-6xl md:font-bold md:text-8xl">Tembea Kenya</p>
-      <p className="text-xl font-thin md:text-3xl halant">
+      <p className="font-semibold text-4xl md:font-bold md:text-8xl">Tembea Kenya</p>
+      <p className="text-xl font-thin text-center md:text-3xl halant">
         Discover the heart of Africa – Where adventure meets serenity
       </p>
-      <p className="font-thin text-xl halant">
+      <p className="font-thin text-xl text-center halant">
         Get started with a destination of choice
       </p>
-      <div className="flex items-center justify-center gap-4 px-24 h-1/8 w-[40%]">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 px-24 h-1/8 w-1/4 md:w-[40%]">
         <HomeButton
           text="NAIROBI"
           bgLink={bgimages.nbi}

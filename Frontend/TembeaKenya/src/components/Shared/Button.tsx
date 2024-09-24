@@ -15,7 +15,7 @@ const Button = (props: Props) => {
             props.type === 'default' ? "bg-gray-800" :
             props.type === 'primary' ? "bg-white" :
             "") +
-            " py-3 px-6 text-sm"
+            " py-2 px-2 text-xs md:py-3 md:px-6 md:text-sm"
         }
     >
         {props.text}
