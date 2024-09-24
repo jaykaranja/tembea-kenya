@@ -94,7 +94,7 @@ const TembeaKenyaHero = () => {
       <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-6">
         <h2 className="text-2xl font-bold text-white mb-4">Recent Bookings</h2>
         <ul className="space-y-2">
-          {bookings.map((booking, index) => (
+          {bookings.map((booking:unknown, index) => (
             <li key={index} className="p-4 bg-white bg-opacity-10 rounded-md text-white">
               <p><strong>Destination:</strong> {booking.destination}</p>
               <p><strong>Dates:</strong> {booking.checkinCheckout}</p>
